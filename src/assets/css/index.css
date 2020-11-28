@@ -1,0 +1,784 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+    color: #333;
+    font-size: 24px;
+}
+
+div,
+ul,
+dl,
+dt,
+dd,
+span,
+strong,
+b,
+i,
+em,
+li,
+p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+div:after,
+ul:after {
+    clear: both;
+}
+
+a {
+    color: #333;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus {
+    outline: thin dotted;
+    outline: thin dotted;
+    outline: 1px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.gtc {
+    text-align: center;
+}
+
+.gtb {
+    text-align: right;
+}
+
+.gfl {
+    float: left;
+}
+
+.gfr {
+    float: right;
+}
+
+.gof {
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    overflow: hidden;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+.fs20 {
+    font-size: 20px!important;
+}
+
+.gmb {
+    margin-bottom: 30px;
+}
+
+.gmt {
+    margin-top: 30px;
+}
+
+.gplr {
+    padding: 0 40px;
+}
+
+.gpa {
+    padding: 40px;
+}
+
+.center {
+    justify-items: center;
+    align-items: center;
+}
+
+.blue {
+    color: #409EFF!important;
+}
+
+.success {
+    color: #67C23A!important;
+}
+
+.danger {
+    color: #F56C6C!important;
+}
+
+.warning {
+    color: #E6A23C!important;
+}
+
+.textof {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.input {
+    opacity: 0 !important;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../../static/theme.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 60px 70px 60px;
+}
+
+.box {
+    background-color: #fff;
+}
+
+@-webkit-keyframes neon2 {
+    from {
+        text-shadow: 0 0 4px #228DFF, 0 0 7px #228DFF, 0 0 8px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+    }
+    to {
+        text-shadow: 0 0 8px #228DFF, 0 0 14px #228DFF, 0 0 16px #228DFF, 0 0 30px #228DFF, 0 0 45px #228DFF;
+    }
+}
+
+#head {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 60px;
+    color: #fff;
+    position: relative;
+}
+
+#head .siteName {
+    text-align: left;
+    font-size: 42px;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+#head .time {
+    font-size: 24px;
+    color: #ffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#foot {
+    color: black;
+    margin-top: 50px;
+    background-color: rgba(64, 158, 255, 0.7);
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.fixed {
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    background-color: #666;
+    border-radius: 10px;
+    color: #fff;
+    z-index: 1;
+}
+
+.gps {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.gps em {
+    font-style: normal;
+    color: #F56C6C;
+}
+
+.gps>span::before {
+    padding: 0 4px;
+}
+
+.gps .user {
+    float: right;
+    color: #67C23A;
+    font-size: 30px;
+}
+
+.user {
+    /* float: right; */
+    color: #67C23A;
+}
+
+.index {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-box {
+    width: 100%;
+    height: 1280px;
+    overflow: hidden;
+    margin-left: 85px;
+    margin-top: 30px;
+}
+
+.index-boxs {
+    width: 100%;
+    height: 1280px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.index-box .index-item {
+    cursor: pointer;
+    width: 340px;
+    height: 320px;
+    color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    float: left;
+    margin: 20px;
+}
+
+.index-box .index-item:nth-child(2n) {
+    margin-right: 40px;
+}
+
+.index-box .index-item .iconfont {
+    font-size: 150px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.index-box .index-item .title {
+    margin-top: 35px;
+    color: #fff;
+}
+
+.indexBg1 {
+    background-image: linear-gradient(135deg, #73ef70, #079b04);
+}
+
+.indexBg2 {
+    background-image: linear-gradient(135deg, #fdd423, #d49202);
+}
+
+.indexBg3 {
+    background-image: linear-gradient(135deg, #f87a15, #f85015);
+}
+
+.indexBg4 {
+    background-image: linear-gradient(135deg, #e890e8, #9830da);
+}
+
+.indexBg5 {
+    background-image: linear-gradient(135deg, #0ce3e5, #0a9893);
+}
+
+.indexBg6 {
+    background-image: linear-gradient(135deg, #f076a1, #d5004b);
+}
+
+.indexBg7 {
+    background-image: linear-gradient(135deg, #27d5ff, #0994fe);
+}
+
+.indexBg8 {
+    background-image: linear-gradient(135deg, #9ddfef, #21a1c0);
+}
+
+.indexBg9 {
+    background-image: linear-gradient(135deg, #d2cdfb, #6350f2);
+}
+
+.money {
+    color: #F56C6C;
+    font-size: 28px;
+}
+
+.money:before {
+    content: '￥';
+    font-size: 20px;
+}
+
+.money:after {
+    content: '元';
+    font-size: 20px;
+}
+
+.cashMoney {
+    color: #F56C6C;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.cashMoney:before {
+    content: '￥';
+    font-size: 26px;
+}
+
+.cashMoney:after {
+    content: '元';
+    font-size: 26px;
+}
+
+
+/*选择科室*/
+
+
+/* .department-item{display:flex;height:50px;}
+.department-item .department-name{flex:1;}
+.department-item .department-btn{width:130px;padding-top:5px;} */
+
+.department-item {}
+
+.department-item .department-name {
+    padding: 10px;
+}
+
+.department-item .department-btn {
+    text-align: right;
+}
+
+.department-item .department-btn .department-active {
+    background-color: #67C23A!important;
+    color: #fff;
+}
+
+.department-item .department-btn .time {
+    display: inline-block;
+    padding: 0 5px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ccc;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+/* .department-item .department-btn */
+
+
+/*中间弹层*/
+
+.dialog {
+    min-height: 300px;
+    display: flex;
+}
+
+.dialog .dialog-item {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: #ccc 1px solid;
+}
+
+.dialog .dialog-item:last-of-type {
+    border-right: none;
+}
+
+.dialog .dialog-item .dialog-name {
+    margin-top: 20px;
+}
+
+.dialog .dialog-item .iconfont,
+.dialog .dialog-item [class*=" el-icon-"],
+.dialog .dialog-item [class^=el-icon-] {
+    font-size: 120px;
+    display: block;
+}
+
+.dialog .dialog-item .code {
+    width: 120px;
+    height: 120px;
+    background: url('../../../static/code.png') no-repeat center;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+.dialog .dialog-item .dialog-small {
+    font-size: 26px;
+    line-height: 40px;
+    color: #333;
+}
+
+.dialog .dialog-item .time {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #C0C4CC;
+    border-radius: 0 20px 0px 20px;
+    line-height: 80px;
+    font-size: 32px;
+    color: #000;
+}
+
+.pay .iconfont,
+.pay .dialog-item [class*=" el-icon-"],
+.pay .dialog-item [class^=el-icon-] {
+    font-size: 300px!important;
+}
+
+
+/*申领表单*/
+
+.form-item1 {
+    height: 80px;
+    overflow: hidden;
+    background-color: #e7ecef;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    padding: 20px 12px 0px 12px;
+    overflow: hidden;
+}
+
+.form-item2 {
+    height: 80px;
+    overflow: hidden;
+    border: #ccc 1px solid;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    padding: 18px 12px 0px 12px;
+    overflow: hidden;
+}
+
+.goChildren {
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #0f4660;
+    font-size: 16px;
+    margin-top: 400px;
+}
+
+.goChildren span {
+    background-color: #61c9fb;
+    color: #fff;
+    width: 170px;
+    height: 54px;
+    line-height: 54px;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sex-box {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.sex-box .sex {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    min-width: 80px;
+    position: relative;
+    padding-left: 40px;
+    margin-left: 10px;
+}
+
+.sex-box .sex::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #e7ecef;
+    border: 4px #e7ecef solid;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.sex-box .active::before {
+    background-color: #47c645;
+}
+
+.el-form-item__content,
+.el-form-item__label,
+.el-input__inner,
+.el-message-box__content {
+    font-size: 24px;
+}
+
+.el-message-box__message {
+    line-height: 1.8;
+}
+
+.el-message-box__content {
+    max-height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.el-picker-panel__icon-btn {
+    font-size: 20px;
+}
+
+.el-date-picker__header-label {
+    font-size: 20px;
+}
+
+.el-date-table {
+    font-size: 20px;
+}
+
+.el-form-item__error {
+    font-size: 20px;
+}
+
+
+/*表格*/
+
+.tableHeader {
+    color: #333;
+    background-color: #E4E7ED!important;
+    border-color: #DCDFE6!important;
+}
+
+.el-table .cell {
+    line-height: 1.8
+}
+
+.el-loading-spinner .circular {
+    width: 100px;
+    height: 100px;
+}
+
+.el-input-group__append,
+.el-input-group__prepend {
+    color: #fff;
+    background-color: #67C23A;
+    border: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.el-input {
+    font-size: 24px;
+}
+
+.el-table {
+    font-size: 24px;
+}
+
+.el-table__expand-icon>.el-icon {
+    margin-left: -18px;
+    margin-top: -18px;
+}
+
+.el-table--mini,
+.el-table--small,
+.el-table__expand-icon {
+    font-size: 36px;
+}
+
+
+/*选择支付方式*/
+
+.paySelect {
+    overflow-y: auto;
+}
+
+.paySelect .dis {
+    background-color: rgba(200, 200, 200, 1)
+}
+
+.paySelect .payItem {
+    border-left: 10px red solid;
+    height: 140px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.paySelect .payItem .iconfont {
+    display: block;
+    font-size: 80px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.paySelect .payItem .titleBox {
+    flex: 1;
+    margin-left: 40px;
+    padding-top: 0.463vw;
+}
+
+.paySelect .payItem .titleBox .title {
+    color: #666;
+    font-size: 32px;
+    height: 50px;
+    line-height: 40px;
+}
+
+.paySelect .payItem .titleBox .subtitle {
+    color: #999;
+}
+
+.paySelect .dis {
+    background-color: rgba(200, 200, 200, 1)
+}
+
+.v-modal {
+    opacity: 0.7;
+}
+
+.el-message-box__header {
+    height: 60px;
+}
+
+.el-message-box__headerbtn .el-message-box__close {
+    font-size: 30px;
+}
+
+.el-dialog {
+    border-radius: 20px;
+}
+
+.el-dialog__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.el-dialog__title,
+.el-dialog__close {
+    font-size: 28px;
+}
+
+.el-pagination__total {
+    color: #fff;
+}
+
+.el-pagination button,
+.el-pagination span:not([class*=suffix]) {
+    font-size: 24px;
+}
+
+.el-button-group {
+    margin: 0 auto;
+    width: 600px;
+    display: block;
+    font-size: 28px;
+}
+
+.el-button {
+    font-size: 28px;
+}
+
+.el-icon-loading:before {
+    color: #409EFF
+}
+
+.icon-13:before {
+    color: #3598db;
+}
+
+.icon-nanyisheng-mian {
+    color: rgb(96, 141, 250);
+}
+
+.icon-nvyisheng-mian {
+    color: rgb(234, 119, 174);
+}
+
+.icon-renlianshibie {
+    color: #0066eb;
+}
+
+.icon-menzhenguahao1 {
+    color: #e50012;
+}
+
+.icon-wodejiaofei {
+    color: #ff9401;
+}
+
+.icon-huaban- {
+    color: #67C23A;
+}
+
+.icon-juminjiankangqia- {
+    color: #0367fd;
+}
+
+.icon-ertong {
+    color: #00e7dd;
+}
+
+.icon-credentials_icon {
+    color: #3e4fb7;
+}
+
+.icon-erweima {
+    color: #8ca2ea;
+}
+
+.icon-icon {
+    color: #2fc0ff;
+}
+
+.el-icon-printer {
+    color: #51b7e9 !important;
+}
+
+.icon-weixin {
+    color: #67C23A;
+}
+
+.icon-zhifubao {
+    color: #02a9f1
+}
+
+.icon-jinggao {
+    color: #E6A23C!important;
+}
+
+.icon-zhifuchenggong {
+    color: #67C23A;
+}
